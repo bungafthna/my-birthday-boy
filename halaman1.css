@@ -1,0 +1,112 @@
+body{
+  background-color: #6D2E46;
+  font-family: garamond;
+  color: #CEBEBE;
+}
+marquee {
+  direction: right;
+  scroll-behavior: alternate;
+}
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+.container-left {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: 60vh;
+}
+
+.container-audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.img-left {
+  float: left;
+  margin-right: 15px;
+  width:30%;
+}
+
+.img-right {
+  float: right;
+  margin-left: 15px;
+  width: 30%;
+}
+
+.img-center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+img {
+  width: 250px;
+  height: auto;
+}
+
+video {
+  width: 500px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.h3-head {
+  text-align: center;
+  margin-left: 20px;
+}
+
+table {
+  width: 75%;
+  border-radius: 10px;
+  background-color: #A26769;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.table-gallery {
+  width: 95%;
+  border-radius: 5px;
+  background-color: #A26769;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+summary {
+  text-align: center;
+  font-family: monaco;
+}
+
+@keyframes blink-animation {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.blink {
+  animation: blink-animation 1s infinite;
+}
